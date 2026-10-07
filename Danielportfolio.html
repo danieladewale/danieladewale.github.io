@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel | UX Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EEF1F6;
+    --ink: #14213D;
+    --muted: #4A5670;
+    --accent: #2F4BFF;
+    --panel: #FFFFFF;
+    --line: #CBD3E1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0F1626;
+      --ink: #E8ECF5;
+      --muted: #9AA6C0;
+      --accent: #7C8FFF;
+      --panel: #172037;
+      --line: #2A3652;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.top { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .brand { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 1.2rem; text-decoration: none; color: var(--ink); }
+  nav a { margin-left: 1.25rem; text-decoration: none; color: var(--muted); font-weight: 500; }
+  nav a:hover { color: var(--accent); }
+
+  .hero { padding: 5rem 0 4rem; }
+  .hero h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.4rem, 7vw, 4.6rem);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.25rem;
+    max-width: 14ch;
+  }
+  .hero p { max-width: 58ch; color: var(--muted); font-size: 1.2rem; margin: 0; }
+
+  section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
+  h2 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.9rem; margin: 0 0 1.25rem; letter-spacing: -0.01em; }
+  h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0 0 .25rem; }
+  p { max-width: 68ch; margin: 0 0 1rem; }
+  .role { color: var(--muted); font-weight: 500; margin-bottom: .75rem; }
+
+  .philosophy {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    line-height: 1.25;
+    border-left: 6px solid var(--accent);
+    padding-left: 1.25rem;
+    max-width: 30ch;
+    margin: 0 0 1.5rem;
+  }
+
+  .project { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1.75rem; margin-bottom: 1.5rem; }
+  .project:last-child { margin-bottom: 0; }
+  .project .tools { color: var(--muted); font-size: .95rem; margin: 0; }
+
+  .case h3 { margin-top: 1.75rem; }
+  .case h3:first-of-type { margin-top: 0; }
+  .case .box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1.5rem; }
+  .note { font-size: .95rem; color: var(--muted); }
+
+  footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--line); color: var(--muted); }
+  footer a { margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Daniel</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Projects</a>
+      <a href="#case-study">Case study</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <div class="hero">
+      <h1>I design software people can trust.</h1>
+      <p>Computer science senior at Howard University, building products where clear design and solid engineering meet.</p>
+    </div>
+
+    <!-- PERSONAL INTRODUCTION -->
+    <section id="about">
+      <h2>Personal introduction</h2>
+      <p>
+        I'm Daniel, a computer science senior at Howard University graduating in May 2027. I build software on both sides of the screen: cloud platform work as an engineering intern, and student-focused products where the interface decides whether people use it at all.
+      </p>
+      <p>
+        [Add 1–2 sentences about what draws you to UX: a moment, a person you designed for, or something you changed your mind about.]
+      </p>
+
+      <h3 style="margin-top:2rem;">Design philosophy</h3>
+      <p class="philosophy">[One sentence. Example: Design for the person who is in a hurry and a little skeptical.]</p>
+      <p>
+        [2–3 sentences expanding on it. What do you do differently because of this belief? Example: I test early with real users, cut anything that doesn't help them finish their task, and write interface copy in plain language.]
+      </p>
+    </section>
+
+    <!-- PROJECTS + ROLES -->
+    <section id="work">
+      <h2>Projects and my role</h2>
+
+      <article class="project">
+        <h3>Cosign</h3>
+        <p class="role">Role: [e.g., Founder, UX researcher, and front-end developer]</p>
+        <p>A verified peer-to-peer housing platform for Howard students. [One sentence on what you personally designed or decided.]</p>
+        <p class="tools">[Tools: Figma, user interviews, ...]</p>
+      </article>
+
+      <article class="project">
+        <h3>Senior capstone: VibeCheck</h3>
+        <p class="role">Role: [your role on the team of Todd Perkins and you]</p>
+        <p>A "vibe matcher" app concept that helps people choose bars and restaurants. [One sentence on your contribution.]</p>
+        <p class="tools">[Tools: ...]</p>
+      </article>
+
+      <article class="project">
+        <h3>[Third project, optional]</h3>
+        <p class="role">Role: [...]</p>
+        <p>[What it is and what you did.]</p>
+        <p class="tools">[Tools: ...]</p>
+      </article>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="case-study" class="case">
+      <h2>UX case study: Cosign</h2>
+      <p class="note">Swap in whichever project you're presenting. This section covers the Overview and Problem Statement from the assignment.</p>
+
+      <h3>Overview</h3>
+      <div class="box">
+        <p><strong>Project:</strong> [name]</p>
+        <p><strong>My role:</strong> [role]</p>
+        <p><strong>Timeline:</strong> [e.g., Summer 2026, ongoing]</p>
+        <p><strong>Tools:</strong> [Figma, ...]</p>
+        <p style="margin-bottom:0;"><strong>Summary:</strong> [2–3 sentences: what you made, who it's for, and the outcome so far.]</p>
+      </div>
+
+      <h3>Problem statement</h3>
+      <div class="box">
+        <p style="margin-bottom:0;">
+          [Use this format: <em>[User] needs a way to [need] because [insight].</em> Example: Howard students looking for off-campus housing need a way to find roommates and sublets they can verify, because current options (group chats and social posts) make it hard to tell who is real and who is safe.]
+        </p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <p>Get in touch</p>
+    <a href="mailto:you@example.com">[your email]</a>
+    <a href="https://www.linkedin.com/in/your-handle">LinkedIn</a>
+    <a href="https://github.com/your-username">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
